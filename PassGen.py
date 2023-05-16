@@ -14,6 +14,6 @@ while 3 == 3:
 
 	
 	GenerateChar = random.randint(0,len(charlist) -1)
-	genchar.append(charlist[GenerateChr])
+	genpass.append(charlist[GenerateChar])
 
-print("Generated Password: " + "".join(genchar))
+print("Generated Password: " + "".join(genpass))
