@@ -1,24 +1,19 @@
 import random
 
 print("Generating Password")
-uzunluk = input("Password Lenght: ")
+PasswordLenght = input("Password Lenght: ")
 
 charlist = "abcdefghıjklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!'^+%&/()=?>£#${[]}}|"
-randomn = random.random()
-axuarray = 0
-passlist = []
+GeneratedChars = 0
+genpass = []
 
 while 3 == 3:
-	axuarray = axuarray + 1
-	if axuarray == int(uzunluk) + 1:
+	GeneratedChars = GeneratedChars + 1
+	if GeneratedChars == int(PasswordLenght) + 1:
 		break
 
 	
-	randomn1 = random.randint(0,len(charlist) -1)
-	passlist.append(charlist[randomn1])
+	GenerateChar = random.randint(0,len(charlist) -1)
+	genchar.append(charlist[GenerateChr])
 
-print("Generated Password: " + "".join(passlist))
-input()
-
-
-
+print("Generated Password: " + "".join(genchar))
